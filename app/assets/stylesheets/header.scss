@@ -1,0 +1,25 @@
+$flavour-font: 'Alegreya Sans SC', sans-serif;
+$base-red: rgb(216, 35, 41);
+
+.main-logo {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: $flavour-font;
+  color: $base-red;
+  font-size: 6em;
+  text-shadow: 3px 3px black;
+}
+
+.links {
+  font-size: 1.5em;
+  display: flex;
+  list-style: none;
+  a {
+    margin: 0 9px 0 9px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $base-red;
+    transform: 2s;
+  }
+}

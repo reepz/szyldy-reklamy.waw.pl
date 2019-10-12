@@ -1,3 +1,108 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$base-red: rgb(216, 35, 41);
+
+body {
+  font-size: 2em;
+}
+
+// $base-font: Arial, Helvetica, sans-serif;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// body {
+  // font-family: $base-font;
+  // display: flex;
+  // flex-direction: column;
+  
+//   header {
+
+//     display: flex;
+//     justify-content: center;
+
+//     .links {
+//       font-family: $base-font;
+//       font-weight: 900;
+//       list-style: none;
+//       display: flex;
+//       font-size: 1.5em;
+//       margin-bottom: 0;
+//       li {
+//         margin: 0px 10px 0 10px;
+//         color: $base-red;
+//         a:link{
+//           text-decoration: none;
+//         }
+//         a:visited {
+//           color:  $base-red;
+//         }
+//         a:hover {
+//           transition: all 1s;
+//           color: black;
+//         }
+//         a:active {
+//           color: $base-red;
+//         }
+//       }
+//       .header-info {
+//         justify-content: flex-end;
+
+//       }
+//     }
+//     .header-info{
+ 
+//       .contact-info {
+        
+//         p{
+//           display: flex;
+//           justify-content: flex-end;
+//           margin: 0 10px 0 0;
+//         }
+//       }
+//       .list-of-services{
+        
+//         margin-top: 5px;
+//         font-family: $flavour-font;
+//         font-size: 1.5em;
+//         color: gray;
+//         letter-spacing: 2px;
+//       }
+//     }
+//     .main-logo {
+//       font-family: $flavour-font;
+//       font-size: 7em;
+//       margin: 0px;
+//       color: $base-red;
+//       text-shadow: 2px 4px 4px black;
+//       text-transform: uppercase;
+//       }
+//   }
+// }
+
+// .wrapper {
+//   box-sizing: content-box;
+//   width: 60%;
+// }
