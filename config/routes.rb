@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "static_pages#index"
+  root "static_pages#about"
 
   get '/kontakt/', to: "static_pages#contact"
   get '/o_nas/', to: "static_pages#about"

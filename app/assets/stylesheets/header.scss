@@ -2,6 +2,13 @@ $flavour-font: 'Alegreya Sans SC', sans-serif;
 $base-red: rgb(216, 35, 41);
 
 .main-logo {
+  a {
+    text-decoration: none;
+    color: $base-red;
+  }
+  a:hover {
+    color: $base-red;
+  }
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: $flavour-font;
@@ -26,7 +33,6 @@ $base-red: rgb(216, 35, 41);
     text-transform: uppercase;
   }
   a:hover {
-    transform: 1s;
     color: $base-red;
   }
 }
@@ -37,6 +43,7 @@ $base-red: rgb(216, 35, 41);
   font-family: $flavour-font;
   color: gray;
   font-size: 1.5em;
+  padding-bottom: 10px;
 }
 
 .contact-info {
