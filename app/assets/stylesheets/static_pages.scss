@@ -13,10 +13,13 @@ body {
 .fas {
   padding-right: 5px;
   font-size: 1.3em;
+  width: 25px;
 }
 
 .contact-wrapper {
   display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
 }
 
 
