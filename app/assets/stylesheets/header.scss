@@ -8,18 +8,43 @@ $base-red: rgb(216, 35, 41);
   color: $base-red;
   font-size: 6em;
   text-shadow: 3px 3px black;
+  background-color: white;
+  margin: 0;
 }
 
 .links {
-  font-size: 1.5em;
+  border-top: 2px solid;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.3em;
   display: flex;
   list-style: none;
   a {
     margin: 0 9px 0 9px;
     text-decoration: none;
+    text-transform: uppercase;
   }
   a:hover {
+    transform: 1s;
     color: $base-red;
-    transform: 2s;
   }
+}
+
+.list-of-services {
+  display: flex;
+  justify-content: center;
+  font-family: $flavour-font;
+  color: gray;
+  font-size: 1.5em;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9em;
+}
+
+.fas {
+  padding-right: 5px;
+  font-size: 1.3em;
 }

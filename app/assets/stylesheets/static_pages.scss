@@ -6,6 +6,13 @@ $base-red: rgb(216, 35, 41);
 
 body {
   font-size: 2em;
+  overflow: scroll;
+}
+
+
+.fas {
+  padding-right: 5px;
+  font-size: 1.3em;
 }
 
 // $base-font: Arial, Helvetica, sans-serif;
