@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: szyldy-reklamy_production
-  username: szyldy-reklamy
-  password: <%= ENV['SZYLDY-REKLAMY_DATABASE_PASSWORD'] %>
+  database: szyldyreklamy_production
+  username: szyldyreklamy
+  password: <%= ENV['SZYLDYREKLAMY_DATABASE_PASSWORD'] %>
