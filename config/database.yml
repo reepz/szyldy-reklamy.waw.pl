@@ -83,3 +83,4 @@ production:
   database: szyldyreklamy_production
   username: szyldyreklamy
   password: <%= ENV['SZYLDYREKLAMY_DATABASE_PASSWORD'] %>
+  host: localhost
