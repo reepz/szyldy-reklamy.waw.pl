@@ -1,27 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Projects</h1>
+<h1 class="section-header">NASZE REALIZACJE</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @projects.each do |project| %>
-      <tr>
-        <td><%= project.image %></td>
-        <td><%= link_to 'Show', project %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+  <div class="upload-picture">
+    <% if user_signed_in? %>
+      <%= link_to 'Dodaj zdjęcie', new_project_path %>
     <% end %>
-  </tbody>
-</table>
+  </div>
+  <br>
+  <div class="image">
+  <% @projects.each do |project| %>
+      <%= link_to (image_tag project.image, height: '300', width: '300'), project %>
+      <% if user_signed_in? %>
+        <%= link_to 'Edycja', edit_project_path(project) %>
+        <%= link_to 'Usuń', project, method: :delete, data: { confirm: 'Napewno usunąć?' } %>
+      <% end %>
+  <% end %>
+  </div>
+
 
 <br>
 
-<%= link_to 'New Project', new_project_path %>
