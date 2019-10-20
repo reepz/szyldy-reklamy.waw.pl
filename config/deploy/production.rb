@@ -6,8 +6,18 @@
 server "cloudscape.pl", user: "cloudscape", roles: %w{app db web}
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
-# set :pg_password, ENV['SZYLDYREKLAMY_DATABASE_PASSWORD'] # Example is an ENV value, but you can use a string instead
-
+set :pg_password, ENV['SZYLDYREKLAMY_DATABASE_PASSWORD'] # Example is an ENV value, but you can use a string instead
+# Postgresql setup
+set :pg_without_sudo, false
+set :pg_host, 'localhost'
+set :pg_database, 'szyldyreklamy_production'
+set :pg_username, 'szyldyreklamy'
+#set :pg_generate_random_password, true
+#set :pg_ask_for_password, true
+set :pg_password, ENV['SZYLDYREKLAMY_DATABASE_PASSWORD']
+#set :pg_extensions, ['citext','hstore']
+set :pg_encoding, 'unicode'
+set :pg_pool, '5'
 
 # role-based syntax
 # ==================
