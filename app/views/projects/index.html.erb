@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="section-header">NASZE REALIZACJE</h1>
-
+<%= render 'partials/about'%>
 
   <div class="upload-picture">
     <% if user_signed_in? %>
@@ -9,7 +8,7 @@
     <% end %>
   </div>
   <br>
-  <div class="image">
+  <div class="image-listing">
   <% @projects.each do |project| %>
       <%= link_to (image_tag project.image, height: '300', width: '300'), project %>
       <% if user_signed_in? %>

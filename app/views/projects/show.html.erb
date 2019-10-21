@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <%= image_tag @project.image %>
+  <%= image_tag @project.image, class: "image" %>
 </p>
 
-<%= link_to 'Wróć', projects_path %>
+<%= link_to 'Wróć', projects_path, class: "back-link" %>
