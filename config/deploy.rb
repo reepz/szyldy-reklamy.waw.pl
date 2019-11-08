@@ -1,8 +1,8 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.2"
 
-set :application, "cloudscape"
-set :repo_url, "git@github.com:reepz/cloudscape.git"
+set :application, "szyldy-reklamy.waw.pl"
+set :repo_url, "git@github.com:reepz/szyldy-reklamy.waw.pl.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
