@@ -78,9 +78,20 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
 production:
   <<: *default
-  database: szyldyreklamy_production
-  username: szyldyreklamy
-  password: <%= ENV['SZYLDYREKLAMY_DATABASE_PASSWORD'] %>
-  host: localhost
+  adapter: postgresql
+  host: <%= ENV.fetch('DATABASE_HOST') %>
+  port: <%= ENV.fetch('DATABASE_PORT') %>
+  username: <%= ENV.fetch('DATABASE_USERNAME') %>
+  password: <%= ENV.fetch('DATABASE_PASSWORD') %>
+
+
+
+# production:
+#   <<: *default
+#   database: szyldyreklamy_production
+#   username: szyldyreklamy
+#   password: <%= ENV['SZYLDYREKLAMY_DATABASE_PASSWORD'] %>
+#   host: localhost
