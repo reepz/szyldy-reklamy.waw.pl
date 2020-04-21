@@ -44,7 +44,7 @@ development:
   #port: 5432
 
   # Schema search path. The server defaults to $user,public
-  #schema_search_path: myapp,sharedapp,public
+  #schema_search_path: szyldy-reklamy,sharedapp,public
 
   # Minimum log levels, in increasing order:
   #   debug5, debug4, debug3, debug2, debug1,
@@ -78,20 +78,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-
 production:
   <<: *default
-  adapter: postgresql
-  host: <%= ENV.fetch('DATABASE_HOST') %>
-  port: <%= ENV.fetch('DATABASE_PORT') %>
-  username: <%= ENV.fetch('DATABASE_USERNAME') %>
-  password: <%= ENV.fetch('DATABASE_PASSWORD') %>
-
-
-
-# production:
-#   <<: *default
-#   database: szyldyreklamy_production
-#   username: szyldyreklamy
-#   password: <%= ENV['SZYLDYREKLAMY_DATABASE_PASSWORD'] %>
-#   host: localhost
+  database: szyldy-reklamy_production
+  username: szyldy-reklamy
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
