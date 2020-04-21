@@ -3,13 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
-<<<<<<< HEAD
-# gem 'passenger', "6.0.4", require: "phusion_passenger/rack_handler"
-=======
-gem 'puma', '~> 4.1'
->>>>>>> 1d0806b36c76e2f691ab34f12b3ff7d025480b94
 gem 'pg', '1.1.4'
-gem 'aws-sdk-s3', '1.49.0', require: false
+# gem 'aws-sdk-s3', '1.49.0', require: false
 gem 'devise', '4.7.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
