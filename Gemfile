@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
+gem 'puma', '~> 4.1'
 gem 'pg', '1.1.4'
 # gem 'aws-sdk-s3', '1.49.0', require: falsee
 gem 'devise', '4.7.1'
